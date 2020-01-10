@@ -19,6 +19,14 @@ public class EmployeeApp {
 		emp.setEmpcode(102);
 		emp.setEmpname("priyanka");
 		emp.setSalary(200000);
+		//retrieving elements from the employee table
+		Query query=ssn.createQuery("from Employee");
+		List<Employee> emplist=query.list();
+		System.out.println("EMPCODE   EMPNAME  SALARY");
+		for(Employee e:emplist)
+		{
+			System.out.println(e.getEmpcode()+" "+e.getEmpname()+" "+e.getSalary());
+		}
 		//save() is to execute the insert query 
 		ssn.save(emp);
 		tx.commit();
