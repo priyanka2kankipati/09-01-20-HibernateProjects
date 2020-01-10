@@ -16,5 +16,10 @@
 		<mapping class="inheritance.Book"></mapping>
 		<mapping class="inheritance.JavaBook"></mapping>
 		<mapping class="inheritance.DotnetBook"></mapping>
+	
+		<mapping class="one2one.Student"/>
+		<mapping class="one2one.Address"></mapping>
+		<mapping class="one2one.One2OneApp"></mapping>
+		
 	</session-factory>
 </hibernate-configuration>
